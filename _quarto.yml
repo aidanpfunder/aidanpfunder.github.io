@@ -2,18 +2,18 @@ project:
   type: website
 
 website:
-  title: "Your_Name - Data Science Portfolio"
+  title: "Aidan Pfunder - Data Science Portfolio"
   favicon: Images/favicon.png
   back-to-top-navigation: true
-  repo-url: https://github.com/username/username.github.io
+  repo-url: https://github.com/aidanpfunder/aidanpfunder.github.io
   #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line
 
   page-footer: 
     border: true
-    left: "Your_Name 2024©"
+    left: "Aidan Pfunder 2024©"
     right: 
       - icon: linkedin
-        href: Your_LinkedIn_URL
+        href: https://www.linkedin.com/in/aidan-pfunder-58b61a193/
 
   navbar:
     background: primary
