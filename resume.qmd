@@ -1,89 +1,72 @@
 ---
 layout: cv
-title: Isaac Newtons's CV
+title: Aidan Pfunder's CV
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
+
+# Aidan Pfunder
+Aspiring Tax Accountant | Excel & Power BI Enthusiast
 
 <div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
+<a href="mailto:aidanpfunder@gmail.com">aidanpfunder@gmail.com</a>
+| <a href="https://www.linkedin.com/in/aidan-pfunder-58b61a193/">LinkedIn</a>
+| +1 (623) 299 5000
 </div>
-
 
 ## Currently
 
-Standing on the shoulders of giants
+Pursuing a B.S. in Accounting at BYU–Idaho and preparing for a career in tax advisory.
 
 ### Specialized in
 
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
-
+Tax Accounting, R&D Tax Credits, QuickBooks Reporting, Technical Support
 
 ### Research interests
 
-Cooling, power series, optics, alchemy, planetary motions, apples.
-
+R&D tax credit analysis, tax compliance for small businesses, financial process automation, technical troubleshooting
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
+`Sept 2019 – Dec 2025`  
+__Brigham Young University–Idaho__, Rexburg, ID, U.S.A.  
+B.S. Accounting — GPA: 3.77
 
-`June 1661 - now`
-__Trinity College, Cambridge__
+- Create basic accounting statements  
+- Analyze budgeting tools  
+- Produce useful QuickBooks reports  
+- Provide data for financial decision making  
+- Build advanced professional spreadsheets  
 
-- Sizar
+## Experience
 
-`1667 - death`
-__Trinity College, Cambridge__
+`Dec 2022 – Present`  
+__IT Printer Support__, BYU–Idaho – Rexburg, ID  
+- Maintain, install, and fix over 500 printers across campus  
+- Collaborate with a small team to manage IT support tickets  
 
-- Fellow
+`Jul 2022 – Present`  
+__A/V Service Technician__, BYU–Idaho – Rexburg, ID  
+- Organize technical equipment for campus events  
+- Provide IT assistance during school functions  
 
+`Jan 2025 – Apr 2025`  
+__Tax Advisory Intern__, RSM – Dallas, TX  
+- Organized and analyzed large data sets in Excel  
+- Performed credit analysis and managed approvals for the R&D tax credit for middle-market corporations ($10M–$100M revenue)  
 
+`Jan 2024 – Apr 2024`  
+__Tax Accounting Intern__, Garth Wilcox CPA – Rexburg, ID  
+- Prepared and amended tax returns for individuals and small businesses  
+- Conducted bookkeeping and bank reconciliation using QuickBooks Desktop & Online  
 
-## Awards
+`Apr 2020 – Apr 2022`  
+__Full-Time Missionary__, The Church of Jesus Christ of Latter-day Saints – Atlanta, GA  
+- Led community outreach and weekly service initiatives  
+- Delivered presentations that significantly increased engagement  
 
-`2012`
-President, *Royal Society*, London, UK
+## Skills
 
-Associate, *French Academy of Science*, Paris, France
-
-
-
-## Publications
-
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
-
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
-
-
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
-
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
+- Microsoft Excel  
+- Microsoft Power BI  
+- R&D Tax Credit Analysis  
+- Tax Accounting  
+- QuickBooks Online & Desktop
