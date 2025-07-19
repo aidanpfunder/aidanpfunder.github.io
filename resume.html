@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.27">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Isaac Newtons’s CV – Aidan Pfunder - Data Science Portfolio</title>
+<title>Aidan Pfunder’s CV – Aidan Pfunder - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6c49c5477b92c77c9eb341f9299c235f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-eead07a6271f81aaf401c8f80545cdc1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f9a105091df3ab81157587366a814a1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-eead07a6271f81aaf401c8f80545cdc1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-04eda9aea4c7056bf2e800ea80b9c375.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-203f54451dd358db0d14b8eb79b3c43a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-04eda9aea4c7056bf2e800ea80b9c375.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
         toggleBodyColorMode(bsSheetEl);
       }
     }
-    window.setColorSchemeToggle = (alternate) => {
+    const setColorSchemeToggle = (alternate) => {
       const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       }
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
-      window.setColorSchemeToggle(alternate)
+      setColorSchemeToggle(alternate)
       // Hack to workaround the fact that safari doesn't
       // properly recolor the scrollbar when toggling (#1455)
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
@@ -168,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
     const isFileUrl = () => {
       return window.location.protocol === 'file:';
     }
-    window.hasAlternateSentinel = () => {
+    const hasAlternateSentinel = () => {
       let styleSentinel = getColorSchemeSentinel();
       if (styleSentinel !== null) {
         return styleSentinel === "alternate";
@@ -196,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
       const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
       const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
       let newTheme = '';
-      if(darkModeDefault) {
+      if(authorPrefersDark) {
         newTheme = isAlternate ? baseTheme : alternateTheme;
       } else {
         newTheme = isAlternate ? alternateTheme : baseTheme;
@@ -219,20 +219,22 @@ ul.task-list li input[type="checkbox"] {
         changeGiscusTheme();
       }
     };
-    const darkModeDefault = false;
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
     // Dark / light mode switch
     window.quartoToggleColorScheme = () => {
       // Read the current dark / light value
-      let toAlternate = !window.hasAlternateSentinel();
+      let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
     };
     // Switch to dark mode if need be
-    if (window.hasAlternateSentinel()) {
+    if (hasAlternateSentinel()) {
       toggleColorMode(true);
     } else {
       toggleColorMode(false);
@@ -303,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#isaac-newton" id="toc-isaac-newton" class="nav-link active" data-scroll-target="#isaac-newton">Isaac Newton</a>
+  <li><a href="#aidan-pfunder" id="toc-aidan-pfunder" class="nav-link active" data-scroll-target="#aidan-pfunder">Aidan Pfunder</a>
   <ul class="collapse">
   <li><a href="#currently" id="toc-currently" class="nav-link" data-scroll-target="#currently">Currently</a>
   <ul class="collapse">
@@ -311,13 +313,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research interests</a></li>
   </ul></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#awards" id="toc-awards" class="nav-link" data-scroll-target="#awards">Awards</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a>
-  <ul class="collapse">
-  <li><a href="#journals" id="toc-journals" class="nav-link" data-scroll-target="#journals">Journals</a></li>
-  <li><a href="#patents" id="toc-patents" class="nav-link" data-scroll-target="#patents">Patents</a></li>
-  </ul></li>
-  <li><a href="#occupation" id="toc-occupation" class="nav-link" data-scroll-target="#occupation">Occupation</a></li>
+  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience</a></li>
+  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -328,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Isaac Newtons’s CV</h1>
+<h1 class="title">Aidan Pfunder’s CV</h1>
 </div>
 
 
@@ -345,66 +342,77 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="isaac-newton" class="level1">
-<h1>Isaac Newton</h1>
-<p>Physicist, Mathematician, Cambridge professor.</p>
+<section id="aidan-pfunder" class="level1">
+<h1>Aidan Pfunder</h1>
+<p>Aspiring Tax Accountant | Excel &amp; Power BI Enthusiast</p>
 <div id="webaddress">
-<p><a href="isaac@applesdofall.org">isaac@applesdofall.org</a> | <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a></p>
+<p><a href="mailto:aidanpfunder@gmail.com">aidanpfunder@gmail.com</a> | <a href="https://www.linkedin.com/in/aidan-pfunder-58b61a193/">LinkedIn</a> | +1 (623) 299 5000</p>
 </div>
 <section id="currently" class="level2">
 <h2 class="anchored" data-anchor-id="currently">Currently</h2>
-<p>Standing on the shoulders of giants</p>
+<p>Pursuing a B.S. in Accounting at BYU–Idaho and preparing for a career in tax advisory.</p>
 <section id="specialized-in" class="level3">
 <h3 class="anchored" data-anchor-id="specialized-in">Specialized in</h3>
-<p>Laws of motion, gravitation, minting coins, disliking <a href="http://en.wikipedia.org/wiki/Robert_Hooke">Robert Hooke</a></p>
+<p>Tax Accounting, R&amp;D Tax Credits, QuickBooks Reporting, Technical Support</p>
 </section>
 <section id="research-interests" class="level3">
 <h3 class="anchored" data-anchor-id="research-interests">Research interests</h3>
-<p>Cooling, power series, optics, alchemy, planetary motions, apples.</p>
+<p>R&amp;D tax credit analysis, tax compliance for small businesses, financial process automation, technical troubleshooting</p>
 </section>
 </section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><code>1654-1660</code> <strong>The King’s School, Grantham.</strong></p>
-<p><code>June 1661 - now</code> <strong>Trinity College, Cambridge</strong></p>
+<p><code>Sept 2019 – Dec 2025</code><br>
+<strong>Brigham Young University–Idaho</strong>, Rexburg, ID, U.S.A.<br>
+B.S. Accounting — GPA: 3.77</p>
 <ul>
-<li>Sizar</li>
+<li>Create basic accounting statements<br>
+</li>
+<li>Analyze budgeting tools<br>
+</li>
+<li>Produce useful QuickBooks reports<br>
+</li>
+<li>Provide data for financial decision making<br>
+</li>
+<li>Build advanced professional spreadsheets</li>
 </ul>
-<p><code>1667 - death</code> <strong>Trinity College, Cambridge</strong></p>
+</section>
+<section id="experience" class="level2">
+<h2 class="anchored" data-anchor-id="experience">Experience</h2>
+<p><code>Dec 2022 – Present</code><br>
+<strong>IT Printer Support</strong>, BYU–Idaho – Rexburg, ID<br>
+- Maintain, install, and fix over 500 printers across campus<br>
+- Collaborate with a small team to manage IT support tickets</p>
+<p><code>Jul 2022 – Present</code><br>
+<strong>A/V Service Technician</strong>, BYU–Idaho – Rexburg, ID<br>
+- Organize technical equipment for campus events<br>
+- Provide IT assistance during school functions</p>
+<p><code>Jan 2025 – Apr 2025</code><br>
+<strong>Tax Advisory Intern</strong>, RSM – Dallas, TX<br>
+- Organized and analyzed large data sets in Excel<br>
+- Performed credit analysis and managed approvals for the R&amp;D tax credit for middle-market corporations ($10M–$100M revenue)</p>
+<p><code>Jan 2024 – Apr 2024</code><br>
+<strong>Tax Accounting Intern</strong>, Garth Wilcox CPA – Rexburg, ID<br>
+- Prepared and amended tax returns for individuals and small businesses<br>
+- Conducted bookkeeping and bank reconciliation using QuickBooks Desktop &amp; Online</p>
+<p><code>Apr 2020 – Apr 2022</code><br>
+<strong>Full-Time Missionary</strong>, The Church of Jesus Christ of Latter-day Saints – Atlanta, GA<br>
+- Led community outreach and weekly service initiatives<br>
+- Delivered presentations that significantly increased engagement</p>
+</section>
+<section id="skills" class="level2">
+<h2 class="anchored" data-anchor-id="skills">Skills</h2>
 <ul>
-<li>Fellow</li>
+<li>Microsoft Excel<br>
+</li>
+<li>Microsoft Power BI<br>
+</li>
+<li>R&amp;D Tax Credit Analysis<br>
+</li>
+<li>Tax Accounting<br>
+</li>
+<li>QuickBooks Online &amp; Desktop</li>
 </ul>
-</section>
-<section id="awards" class="level2">
-<h2 class="anchored" data-anchor-id="awards">Awards</h2>
-<p><code>2012</code> President, <em>Royal Society</em>, London, UK</p>
-<p>Associate, <em>French Academy of Science</em>, Paris, France</p>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-<section id="journals" class="level3">
-<h3 class="anchored" data-anchor-id="journals">Journals</h3>
-<p><code>1669</code> Newton Sir I, De analysi per æquationes numero terminorum infinitas.</p>
-<p><code>1669</code> Lectiones opticæ.</p>
-<p>etc. etc. etc.</p>
-</section>
-<section id="patents" class="level3">
-<h3 class="anchored" data-anchor-id="patents">Patents</h3>
-<p><code>2012</code> Infinitesimal calculus for solutions to physics problems, <a href="http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml">SMBC</a> patent 001</p>
-</section>
-</section>
-<section id="occupation" class="level2">
-<h2 class="anchored" data-anchor-id="occupation">Occupation</h2>
-<p><code>1600</code> <strong>Royal Mint</strong>, London</p>
-<ul>
-<li>Warden</li>
-<li>Minted coins</li>
-</ul>
-<p><code>1600</code> <strong>Lucasian professor of Mathematics</strong>, Cambridge University</p>
-<!-- ### Footer
-
-Last updated: May 2013 -->
 
 
 </section>
@@ -425,7 +433,7 @@ Last updated: May 2013 -->
       a.appendChild(i);
       window.document.body.appendChild(a);
     }
-    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
