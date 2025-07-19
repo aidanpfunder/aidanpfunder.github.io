@@ -359,16 +359,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "about me",
+    "title": "Title 1 Header",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "title: “About Me” subtitle: “My Data Science Portfolio” format: html page-layout: full"
   },
   {
     "objectID": "index.html#title-2-header",
     "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
+    "title": "Title 1 Header",
+    "section": "Title 2 Header",
+    "text": "Title 2 Header\nMarkDown Basics"
   },
   {
     "objectID": "competition.html",
